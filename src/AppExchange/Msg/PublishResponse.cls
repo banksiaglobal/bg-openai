@@ -1,4 +1,4 @@
-Class AppExchange.Msg.PublishResponse Extends (Ens.Request, %JSON.Adaptor, %XML.Adaptor)
+Class AppExchange.Msg.PublishResponse Extends (Ens.Response, %JSON.Adaptor, %XML.Adaptor)
 {
 
 Parameter %JSONIGNOREINVALIDFIELD = 1;

@@ -1,4 +1,4 @@
-Class Banksia.OpenAi.DTLChat Extends Ens.DataTransformDTL [ DependsOn = (Banksia.OpenAi.Msg.Chat.Response, Banksia.OpenAi.Msg.SimplePrompt.Response) ]
+Class AppExchange.DTLChat Extends Ens.DataTransformDTL [ DependsOn = (Banksia.OpenAi.Msg.Chat.Response, Banksia.OpenAi.Msg.SimplePrompt.Response) ]
 {
 
 Parameter IGNOREMISSINGSOURCE = 1;

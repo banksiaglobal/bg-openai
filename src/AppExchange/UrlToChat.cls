@@ -1,4 +1,4 @@
-Class Banksia.OpenAi.UrlToChat Extends Ens.DataTransformDTL [ DependsOn = (Ens.StringRequest, Banksia.OpenAi.Msg.SimplePrompt.Request) ]
+Class AppExchange.UrlToChat Extends Ens.DataTransformDTL [ DependsOn = (Ens.StringRequest, Banksia.OpenAi.Msg.SimplePrompt.Request) ]
 {
 
 Parameter IGNOREMISSINGSOURCE = 1;

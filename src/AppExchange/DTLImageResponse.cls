@@ -1,4 +1,4 @@
-Class Banksia.OpenAi.DTLImageResponce Extends Ens.DataTransformDTL [ DependsOn = (Banksia.OpenAi.Msg.Images.Response, Ens.StringResponse) ]
+Class AppExchange.DTLImageResponse Extends Ens.DataTransformDTL [ DependsOn = (Banksia.OpenAi.Msg.Images.Response, Ens.StringResponse) ]
 {
 
 Parameter IGNOREMISSINGSOURCE = 1;

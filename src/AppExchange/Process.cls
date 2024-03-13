@@ -18,7 +18,7 @@ XData BPL [ XMLNamespace = "http://www.intersystems.com/bpl" ]
 <empty name='Process App Request' xpos='200' ypos='250' >
 <annotation><![CDATA[This is some process our app usually goes through]]></annotation>
 </empty>
-<if name='Summary empty' condition='request.Summary="" &amp; request.GitHubUrl &apos;=""' xpos='200' ypos='350' xend='200' yend='700' >
+<if name='Summary empty' condition='(request.Summary="") &amp; (request.GitHubUrl &apos;="")' xpos='200' ypos='350' xend='200' yend='700' >
 <true>
 <call name='Generate Summary' target='OpenAiOut' async='1' xpos='335' ypos='500' >
 <request type='Banksia.OpenAi.Msg.SimplePrompt.Request' >
@@ -33,7 +33,7 @@ XData BPL [ XMLNamespace = "http://www.intersystems.com/bpl" ]
 <sync name='Wait call' calls='Generate Summary' type='all' xpos='335' ypos='600' />
 </true>
 </if>
-<if name='LogoUrl empty' condition='request.LogoUrl ="" &amp; context.summary &apos;=""' xpos='200' ypos='800' xend='200' yend='1150' >
+<if name='LogoUrl empty' condition='(request.LogoUrl="") &amp; (request.Summary &apos;="")' xpos='200' ypos='800' xend='200' yend='1150' >
 <true>
 <call name='Generate Logo' target='OpenAiOut' async='1' xpos='335' ypos='950' >
 <request type='Banksia.OpenAi.Msg.Images.Request' >

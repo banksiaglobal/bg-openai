@@ -18,6 +18,7 @@ XData ProductionDefinition
   <Item Name="OpenAiOut" Category="" ClassName="Banksia.OpenAi.Operation" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
     <Setting Target="Adapter" Name="Credentials">openai</Setting>
     <Setting Target="Adapter" Name="SSLConfig">OpenAiSSL</Setting>
+    <Setting Target="Adapter" Name="ResponseTimeout">60</Setting>
   </Item>
 </Production>
 }

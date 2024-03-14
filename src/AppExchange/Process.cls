@@ -39,7 +39,7 @@ XData BPL [ XMLNamespace = "http://www.intersystems.com/bpl" ]
 <request type='Banksia.OpenAi.Msg.Images.Request' >
 <assign property="callrequest.Operation" value="&quot;generations&quot;" action="set" />
 <assign property="callrequest.ResponseFormat" value="&quot;url&quot;" action="set" />
-<assign property="callrequest.Prompt" value="&quot;Create a simple app icon for the following mobile application: &quot;_context.summary" action="set" />
+<assign property="callrequest.Prompt" value="&quot;Create a simple app icon for the following mobile application : &quot;_request.Summary" action="set" />
 <assign property="callrequest.Size" value="&quot;256x256&quot;" action="set" />
 </request>
 <response type='Banksia.OpenAi.Msg.Images.Response' >
